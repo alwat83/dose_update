@@ -1,13 +1,3 @@
-.dashboard-container {
-  padding: 20px;
-  margin: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  color: black;
-}
-
 .drug-table {
   width: 100%;
   border-collapse: collapse;
@@ -38,16 +28,23 @@
   background-color: #f0f0f0;
 }
 
+/* Pill-style "View Details" button */
 .drug-table a {
-  background-color: var(--secondary-color);
+  background-color: var(--color-primary); // now using blue
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 6px 16px;
+  border-radius: 999px; // pill shape
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .drug-table a:hover {
-  background-color: #2980b9;
+  background-color: #1565c0; // darker shade of blue for hover
 }
+
