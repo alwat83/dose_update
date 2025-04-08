@@ -1,3 +1,4 @@
+/* 🌞 Light Theme Variables */
 :root {
     --color-primary: #1976d2;
     --color-secondary: #43a047;
@@ -8,13 +9,28 @@
     --color-muted: #757575;
   }
   
-  body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    margin: 0;
+  /* 🌙 Dark Theme Overrides */
+  body.dark {
+    --color-primary: #90caf9;
+    --color-secondary: #81c784;
+    --color-accent: #fff59d;
+    --color-bg: #121212;
+    --color-surface: #1e1e1e;
+    --color-text: #eeeeee;
+    --color-muted: #aaaaaa;
   }
   
+  /* 🌐 Universal Styles */
+  body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 🧩 Buttons */
   button {
     background-color: var(--color-primary);
     color: #fff;
@@ -29,11 +45,13 @@
     background-color: #1565c0;
   }
   
+  /* 📦 Card Component */
   .card {
     background-color: var(--color-surface);
     box-shadow: 0 4px 8px rgba(0,0,0,0.06);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
   }
   

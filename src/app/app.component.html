@@ -4,7 +4,10 @@
       <a href="/" class="logo-link">
         <img src="logo.png" alt="Dose Ninja Logo" class="logo" />
       </a>
-
+      <button (click)="toggleDarkMode()" class="theme-toggle-btn">
+        {{ isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode' }}
+      </button>
+      
       <button class="hamburger-menu" (click)="toggleMenu()">&#9776;</button>
 
       <nav class="app-nav" [class.active]="isMenuOpen">
